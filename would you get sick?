@@ -1,0 +1,12 @@
+
+temp = int(input("What's the temperature in Fahrenheit: "))
+time = int(input("How many hours were you outside?: "))
+chances = 0.1
+if temp < 10:
+    chances = temp * (time/2)
+elif temp < 30:
+    chances = temp * (time/5)
+elif temp >= 30:
+    chances = 1
+
+print(str(chances)+"%")
